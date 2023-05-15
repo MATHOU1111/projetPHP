@@ -1,0 +1,363 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("cool.avif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  
+header{
+    background-color: #b4b2b2;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+li > a{
+  text-decoration:none;
+  list-style-type: none;
+}
+
+.nav a:hover {
+  background-color: #555;
+}
+
+/* Ce qui apparaît en bas à gauche de l'écran lorsqu'un admin est connecté */
+.user-info {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 2;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  margin-bottom: 5%;
+}
+
+.detail{
+  width: 90%;
+  margin: auto;
+}
+
+  
+main {
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+
+
+/* CSS pour l'affichage des posts en mode grid */
+
+.post-list {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 20px;
+  margin-left: 8%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* pour les écrans de taille 768px et plus */
+  .post-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.post {
+  background-color: #b0e7f8;
+  border: 2px solid #ccc;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(211, 205, 205);
+  position: relative;
+}
+
+
+.post:hover {
+  transform: scale(1.05);
+  transition: 0.8s;
+  background-color: rgb(227, 228, 235);
+}
+
+.post a {
+  text-decoration: none;
+}
+
+.author p{
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  color:rgb(0, 45, 194);
+}
+
+
+.title {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color:rgb(0, 45, 194);
+  padding: 20px
+}
+
+.content {
+  margin-bottom: 50px;
+  color: rgb(0, 45, 194);
+  padding-bottom: 10px;
+}
+
+.date {
+  text-align: right;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  color: rgb(0, 45, 194);
+}
+
+
+/* Affichage des boutons */
+
+a .button-blue {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.button-blue:hover {
+  background-color: #0069d9;
+}
+
+a .button-red {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-right: 10px;
+}
+
+.button-blue:hover {
+  background-color: #4763bd;
+}
+
+.button-red:hover{
+  background-color: #bb2e29;
+}
+
+
+.addPost{
+  margin: auto;
+  width: 11%;
+}
+
+/* login page */
+
+.signin-container {
+  background-color: #fff;
+  width: 400px;
+  margin: 10% auto;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.signin-container h1 {
+  text-align: center;
+  color: #0099cc;
+}
+
+.signin-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-container label {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.signin-container input[type=text],
+.signin-container input[type=password] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.signin-container button[type=submit] {
+  background-color: #0099cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-container button[type=submit]:hover {
+  background-color: #006699;
+}
+
+/* Affichage de la page modifier */
+
+
+.modifierPost{
+  width: 80%;
+  margin: 8% auto;
+}
+
+.modifierPost form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.modifierPost h4 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.modifierPost label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  margin-left: 5%;
+}
+
+.modifierPost input[type=text],
+.modifierPost textarea {
+  width:80%;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  border-radius: 5px;
+}
+.modifierPost #image{
+  width:80%;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 4%;
+  border-radius: 5px;
+}
+
+.modifierPost select {
+  width: 40%;
+  margin: auto;
+  margin-left: 5%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #333;
+  background-color: #fff;
+}
+
+.modifierPost button[type=submit] {
+  background-color: #0099cc;
+  margin-left: 5%;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modifierPost button[type=submit]:hover {
+  background-color: #006699;
+}
+
+/* CSS du footer */
+footer {
+  background-color: #b4b2b2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* Message d'erreur */
+.errorMessage {
+  background-color: #ffe6e6; 
+  color: #cc0000; 
+  border: 1px solid #cc0000; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border-radius: 5px; 
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+}

@@ -1,0 +1,161 @@
+
+/* Affichage du post dans détails */
+
+
+article{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  align-items: flex-end;
+  font-family: 'Inter', sans-serif;
+  width: 87%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 85%;
+  margin: auto;
+}
+
+.date1 {
+  font-size: 14px;
+  color: #1102e8;
+  width: 85%;
+  margin: auto;
+  align-self: flex-end;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+article .image{
+  width: 85%;
+  margin: auto;
+  margin-left: 10%;
+}
+
+
+.content{
+  text-align: left;
+  font-size: 16px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+
+h2{
+  font-size: 15px;
+}
+
+
+
+/* Commentaire dans la page details */
+.comment {
+  background-color: #faf9f9;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  align-items: flex-end;
+  font-family: 'Inter', sans-serif;
+  width: 63%;
+  margin-left: 5%;
+}
+
+.comment .pseudo {
+  padding: 30px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 85%;
+  margin: auto;
+}
+
+.comment .message {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.comment .date {
+  font-size: 12px;
+  color: #1102e8;
+  width: 86%;
+  margin: auto;
+  align-self: flex-end;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Poster un commentaire dans détails  */
+
+.commentPosting {
+  margin-top: 1 0px;
+  padding: 10px;
+  border: 5px solid #9ba4a4;
+  border-radius: 3px;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+.commentPosting form {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentPosting label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.commentPosting input,
+.commentPosting textarea {
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.commentPosting button[type="submit"] {
+  background-color: #1a1919;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.commentPosting button[type="submit"]:hover {
+  background-color: #41403f;
+}
+
+.button-blue {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.button-blue:hover {
+  background-color: #0069d9;
+}
